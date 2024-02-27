@@ -1,0 +1,83 @@
+#Alo mundo
+print('Alo mundo')
+#Numero informado
+print('----------------------')
+print('Agora vamos informar um numero')
+SeuNumero = input('digita um numero')
+print(f'o numero informado foi {SeuNumero} !')
+#soma
+print('----------------------')
+print('agora vamos a soma')
+N1 = int(input('Digite um numero '))
+N2 = int(input('Digite outro numero '))
+soma = N1 + N2
+print(f'A soma dos numeros é {soma}')
+#duas notas bimestrais
+print('----------------------')
+print('Agora vamos calcular a media das suas notas')
+Nota_1 =int(input('Qual foi sua nota no primeiro semestre?'))
+Nota_2 =int(input('Qual foi sua nota no segundo semestre?'))
+media_nota = (Nota_1 + Nota_2) / 2
+print (f'a sua media é de {media_nota} tá bem ou se lascou? ')
+#Descobrindo """
+print('----------------------')
+print('Agora vamos ver oque é oque')
+Vstring = 'Sou uma stringg'
+Vfloat = 543.547
+Vnum = 556
+print(type(Vstring), 'sou uma string')
+print(type(Vfloat),'sou 543.54 e sou um float')
+print(type(Vnum),'sou 556 e sou um numero inteiro')
+
+print('----------------------')
+#Vamos calcular a tabuada numerica
+Num_Tabuada = int(input('Digite um numero e veremos a tabuada dele'))
+
+#criei uma função para fazer o calculo
+def tabuada(n):
+    #Esta é uma estrutura de repetição for que irá iterar sobre uma sequência de números de 1 a 10
+    #o i pode ser substituido por qualquer letra, coloquei apenas por ser mais comum
+    #range serve pra definir o limite de repetição
+    #num resumo ta escrito ' para todos dentro de 1 a 11 escreva o valor abaixo'
+    for i in range(1, 11):
+        
+      print(f'{n} x {i} = {n*i}')
+#Esta linha está dentro do loop for, então será executada 10 vezes.
+#Ela imprime uma string formatada que mostra a multiplicação de n por i e o resultado dessa multiplicação (n*i).
+
+#aqui eu estou atribuindo o valor do numero solicitado à função
+tabuada(Num_Tabuada)
+
+#vamos fazer uma calculadora basica Agora
+
+print('----------------------')
+print('vamos fazer uma calculadora basica agora!, vou precisar que me diga dois numeros Numero A e numero B')
+A = int(input('digite o numero A'))
+B = int(input('digite o numero B'))
+SomaAB = A + B
+SubAB = A - B
+MultAB = A * B
+DivAB = A / B
+QuoAB = A // B
+RestAB = A % B
+ExpAB = A ** B
+print(f'numero A é {A}, numero B é {B}')
+print(f' a soma deles é {SomaAB}' )
+print(f' a diferença deles é {SubAB}')
+print(f' o produto deles é {MultAB}')
+print(f' a divisão deles é {DivAB}')
+print(f' o quociente deles é {QuoAB}')
+print(f' o resto deles é {RestAB}')
+print(f' a resultado do expoente deles é {ExpAB}')
+print('----------------------')
+#Hora do questionario
+print('Obrigado por usar, Preencha com suas informações por gentileza')
+Nome = (input('digite o seu nome '))
+Telefone = (input('digite o seu Telefone'))
+Email = (input('digite o seu Email'))
+Nasc = (input('digite a data de nascimento '))
+print(f'Seu nome é {Nome}, Seu Telefone é {Telefone}, seu email é {Email}, Sua data de Nascimento é {Nasc}')
+#Fim
+
+print('Chegamos ao fim, finalmente! Obrigado volte sempre')
+print('Olá mundo!')
