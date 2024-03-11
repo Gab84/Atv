@@ -137,4 +137,30 @@ print(f'seus nomes são {Nome1_8} e {Nome2_8} suas idades são {idade1_8} e {ida
 if idade1_8 < idade2_8: print(f'seu nome é {Nome1_8} sua idade é {idade1_8} e você é a mais nova')
 else: print(f'seu nome é {Nome2_8} sua idade é {idade2_8} e você é a mais nova')
     """
-#9 - 
+#9 - Suponha que o conceito de um aluno seja determinado em função da sua nota. Suponha, também, que esta nota seja um valor inteiro na faixa de 0 a 100, conforme a seguinte faixa:Nota Conceito 0 a 49 Insuficiente50 a 69 Regular 70 a 84 Bom 85 a 100 Ótimo Crie um algoritmo que apresente o conceito e a nota do aluno.
+"""nota = int(input('digite sua nota: '))
+conceito = None
+if nota >= 0 and nota <= 49:
+    conceito = 'insuficiente'
+elif nota >= 50 and nota <= 69:
+    conceito = 'Regular'
+elif nota >= 70 and nota <= 84:
+    conceito = 'Bom'
+elif nota >= 85 and nota <= 100:
+    conceito = 'Ótimo' 
+else:
+    raise ValueError('nota inválida '+ str ( nota ))
+    
+print(f' a sua nota é {nota} ')
+print(f'o conceito é {conceito} ')"""
+#10 - Faça um Programa que pergunte em que turno você estuda. Peça para digitar M-matutino  ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+print(' M - Matutino \n V - Vespertino \n N - Noturno ')
+turno = input('que turno você estuda? (Apenas a Letra!) ').lower()
+if turno == 'm':
+    print('Bom dia!')
+elif turno == 'v' :
+    print('Boa tarde !')
+elif turno == 'n':
+    print('Boa noite!')
+else:
+    print('Valor invalido! ')
